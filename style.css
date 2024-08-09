@@ -1,6 +1,5 @@
 body {
-    background-color: rgba(39, 116, 9, 0.808);
-    color: rgb(229, 245, 231);
+    background-color: rgba(248, 244, 227);
 }
 
 h1, p, strong, a {
@@ -9,20 +8,34 @@ h1, p, strong, a {
 
 h1 {
     text-align: center;
+    color: rgb(185, 139, 130);
 }
 
 strong {
-    color: rgb(46, 241, 182);
+    color: rgb(178, 110, 99);
 }
 
 p {
     text-align: center;
+    color: rgb(112, 141, 129);
 }
 
 img {
     border-radius: 100%;
     width: 70dvi;
     height: 60dvi;
+}
+
+a {
+    color: rgb(47, 37, 4);
+}
+
+a:visited {
+    color:rgb(47, 62, 4);
+}
+
+a:hover {
+    color: rgb(112, 141, 129);
 }
 
 .foto_principal {
