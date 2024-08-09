@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(39, 116, 9, 0.808);
+    color: rgb(229, 245, 231);
+}
+
+h1, p, strong, a {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+strong {
+    color: rgb(46, 241, 182);
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    border-radius: 100%;
+    width: 70dvi;
+    height: 60dvi;
+}
+
+.foto_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+footer {
+    text-align: center;
+}
