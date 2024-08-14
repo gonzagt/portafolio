@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-h1, p, strong, a {
+h1, p, strong, a, .listado {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -29,7 +29,7 @@ span {
     text-decoration-style: dotted;
 }
 
-p {
+p, .listado {
     text-align: center;
     color: rgb(112, 141, 129);
 }
