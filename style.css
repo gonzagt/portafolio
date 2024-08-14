@@ -1,5 +1,13 @@
 body {
     background-color: rgba(248, 244, 227);
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
 }
 
 h1, p, strong, a {
@@ -28,8 +36,8 @@ p {
 
 img {
     border-radius: 100%;
-    width: 70dvi;
-    height: 60dvi;
+    width: 33dvi;
+    height: 33dvi;
 }
 
 a {
