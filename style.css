@@ -5,13 +5,10 @@ body {
     box-sizing: border-box;
 }
 
-.presentacion {
-    display: flex;
-    align-items: center;
-}
-
-h1, p, strong, a, .listado {
+h1, p, strong, a, .presentacion__listado {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: rgb(112, 141, 129);
+    margin: 2vh 0;
 }
 
 h1 {
@@ -29,19 +26,51 @@ span {
     text-decoration-style: dotted;
 }
 
-p, .listado {
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul {
+    display: block;
+    list-style-position: outside;
+    padding-left: 40%;
+    padding-right: 40%;
+    margin: 0;
+}
+
+li {
+    display: list-item;
+    align-items: center;
+    margin: 5px 0px;
+    padding-left: 0;
+    padding-right: 0%;
+    line-height: 1.5;
+}
+
+.presentacion__listado {
     text-align: center;
-    color: rgb(112, 141, 129);
+}
+
+p {
+    text-align: center;
 }
 
 img {
     border-radius: 100%;
-    width: 33dvi;
-    height: 33dvi;
+    width: 33vw;
+    height: 33vw;
 }
 
 a {
     color: rgb(47, 37, 4);
+}
+
+li::marker {
+    margin-right: 0;
+    font-size: 1em;
+    color: rgb(112, 141, 129);
 }
 
 a:visited {
