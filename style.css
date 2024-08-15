@@ -7,10 +7,11 @@ body {
     box-sizing: border-box;
 }
 
-h1, p, strong, a, .presentacion__contenido__listado, .presentacion__foto_principal__caption {
+h1, p, section, a, span, footer, .presentacion__contenido__listado, .presentacion__foto_principal__caption {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: rgb(112, 141, 129);
     margin: 2vh 0;
+    font-size: 40px;
 }
 
 /* ---------- Elementos únicos ---------- */
@@ -18,6 +19,12 @@ h1, p, strong, a, .presentacion__contenido__listado, .presentacion__foto_princip
 h1 {
     text-align: center;
     color: rgb(178, 65, 99);
+}
+
+p {
+    text-align: center;
+    margin: 30px;
+    font-size: 0.5em;
 }
 
 strong {
@@ -28,6 +35,7 @@ span {
     text-decoration: underline;
     text-decoration-color: rgba(128, 128, 128, 0.582);
     text-decoration-style: dotted;
+    color: rgb(185, 211, 130);
 }
 
 ul {
@@ -42,24 +50,22 @@ li {
     list-style: none;
     white-space: nowrap;
     line-height: 1.5;
-}
-
-p {
-    text-align: center;
+    font-size: 0.5em;
 }
 
 img {
     border-radius: 100%;
-    width: 33vw;
-    height: 33vw;
-}
-
-a {
-    color: rgb(47, 37, 4);
+    width: 20vw;
+    height: 20vw;
+    border: 2px solid #000; /* 5px de ancho, línea sólida, color negro */
 }
 
 footer {
+    color: rgb(47, 37, 4);
+    display: flex;
     text-align: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
 }
 
 /* ---------- Clases ---------- */
@@ -74,6 +80,16 @@ footer {
     text-align: center;
 }
 
+.presentacion__contenido__talk {
+    display: flex;
+    color: rgb(112, 141, 129);
+    justify-content: center;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 0.5em;
+}
+
+
 .presentacion__foto_principal {
     display: flex;
     flex-direction: column;
@@ -83,8 +99,19 @@ footer {
 }
 
 .presentacion__foto_principal__caption {
-    font-size: 0.6em;
-    margin: 0.9em;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0.5em;
+}
+
+.enlaces {
+    width: 120px;
+    font-size: 1.2rem;
+    background-color:rgba(219, 254, 184);
+    justify-content: space-evenly;
+    padding: 5px 50px;
+    border-radius: 16px;
+    text-decoration: none;
 }
 
 /* ---------- Interacciones ---------- */
@@ -96,9 +123,9 @@ li::marker {
 }
 
 a:visited {
-    color:rgb(47, 62, 4);
+    color:rgb(122, 145, 141);
 }
 
 a:hover {
-    color: rgb(112, 141, 129);
+    color: rgba(112, 141, 129, 0.329);
 }
