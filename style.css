@@ -1,3 +1,5 @@
+/* ---------- Body y Elementos agrupados ---------- */
+
 body {
     background-color: rgba(248, 244, 227);
     height: 100vh;
@@ -5,11 +7,13 @@ body {
     box-sizing: border-box;
 }
 
-h1, p, strong, a, .presentacion__listado {
+h1, p, strong, a, .presentacion__contenido__listado, .presentacion__foto_principal__caption {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: rgb(112, 141, 129);
     margin: 2vh 0;
 }
+
+/* ---------- Elementos únicos ---------- */
 
 h1 {
     text-align: center;
@@ -26,12 +30,6 @@ span {
     text-decoration-style: dotted;
 }
 
-.presentacion {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 ul {
     display: flex;
     flex-direction: column;
@@ -44,10 +42,6 @@ li {
     list-style: none;
     white-space: nowrap;
     line-height: 1.5;
-}
-
-.presentacion__listado {
-    text-align: center;
 }
 
 p {
@@ -64,6 +58,37 @@ a {
     color: rgb(47, 37, 4);
 }
 
+footer {
+    text-align: center;
+}
+
+/* ---------- Clases ---------- */
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.presentacion__contenido__listado {
+    text-align: center;
+}
+
+.presentacion__foto_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.presentacion__foto_principal__caption {
+    font-size: 0.6em;
+    margin: 0.9em;
+}
+
+/* ---------- Interacciones ---------- */
+
 li::marker {
     margin-right: 0;
     font-size: 1em;
@@ -76,15 +101,4 @@ a:visited {
 
 a:hover {
     color: rgb(112, 141, 129);
-}
-
-.foto_principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-}
-
-footer {
-    text-align: center;
 }
