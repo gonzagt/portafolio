@@ -6,14 +6,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Portafolio</title>
 </head>
     <body>
-        <header>
+        <header class="header">
+            <nav class="header__nav">
+                <a class="header__nav__link" href="index.html">Principal</a>
+                <a class="header__nav__link" href="about.html">Sobre mí</a>
+            </nav>
         </header>
         <main class="presentacion">
+            <div class="flex_column">
+            <div class="flex_row">
             <section class="presentacion__contenido">
                 <h1 class="presentacion__contenido__titulo">Eleva tu negocio digital a otro nivel <br>
                     <strong>con un <span>desarrollador</span> de calidad.</strong>
@@ -33,19 +39,24 @@
                     Ayudo a pequeños negocios y diseñadores a llevar a cabo buenas ideas 💡
                     <br>
                 </p>
-                <span class="presentacion__contenido__talk">
-                    ¿Hablamos?💬
-                </span>
+                <p class="presentacion__contenido__talk">
+                    ¿Hablamos?&#160;&#160;💬
+                </p>
             </section>
             
             <figure class="presentacion__foto_principal">
                 <img src="./img/Gonzalo.png" alt="Foto de Presentación">
-                <figcaption class="presentacion__foto_principal__caption">Gonzalo Tello, Web Developer. 2024.</figcaption>
+                <figcaption class="presentacion__foto_principal__caption">Gonzalo Tello<br>Web Developer</figcaption>
             </figure>
+            </div>
+            <div class="enlaces_div">
+                <a class="enlaces" href="http://www.instagram.com" target="_blank">Instagram</a>
+                <a class="enlaces" href="http://www.github.com" target="_blank">Github</a>
+            </div>
+            </div>
         </main>
         <footer>
-            <a class="enlaces" href="http://www.instagram.com" target="_blank">Instagram</a>
-            <a class="enlaces" href="http://www.github.com" target="_blank">Github</a>
+            <p>Desarrollado por Gonzalo Tello, 2024.</p>
         </footer>
     </body>
 </html>

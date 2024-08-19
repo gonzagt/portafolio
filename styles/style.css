@@ -1,3 +1,7 @@
+:root {
+    --font-uno: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 /* ---------- Body y Elementos agrupados ---------- */
 
 body {
@@ -7,8 +11,8 @@ body {
     box-sizing: border-box;
 }
 
-h1, p, section, a, span, footer, .presentacion__contenido__listado, .presentacion__foto_principal__caption {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+h1, p, section, span, footer, .presentacion__contenido__listado, .presentacion__foto_principal__caption {
+    font-family: var(--font-uno);
     color: rgb(112, 141, 129);
     margin: 2vh 0;
     font-size: 40px;
@@ -55,8 +59,8 @@ li {
 
 img {
     border-radius: 100%;
-    width: 20vw;
-    height: 20vw;
+    width: 440px;
+    height: 440px;
     outline: 2px solid #00000052;
     outline-offset: 3px;
 }
@@ -66,15 +70,28 @@ footer {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    flex-flow: row wrap;
 }
 
 /* ---------- Clases ---------- */
 
-.presentacion {
+.header {
+    padding: 2% 0% 3% 7%;
+    font-size: 1em;
+    font-family: var(--font-uno);
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.header__nav>a {
+    text-decoration: none;
+    padding-left: 3vw;
+}
+
+.flex_row {
+    display: flex;
+    justify-content:center;
+    white-space: wrap;
+    gap: 20px;
 }
 
 .presentacion__contenido__listado {
@@ -90,31 +107,54 @@ footer {
     font-size: 0.5em;
 }
 
-
 .presentacion__foto_principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 70vh;
+    padding-top: 2vh;
 }
 
 .presentacion__foto_principal__caption {
+    width: 40%;
     text-align: center;
     font-size: 0.9em;
     margin: 1em;
+}
+
+.presentacion__contenido {
+    width: 65%;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentacion__contenido__cuadro {
+    max-width: 80%;
+    border-radius: 3%;
+    border: 2px solid #00000052;
 }
 
 .enlaces {
     width: 120px;
     font-size: 1.2rem;
     background-color:rgba(219, 254, 184);
-    justify-content: space-evenly;
+    text-align: center;
     padding: 5px 50px;
     border-radius: 16px;
     text-decoration: none;
+    font-family: var(--font-uno);
 }
 
+.enlaces_div {
+    display: flex;
+    justify-content:space-evenly;
+    flex-flow: row wrap;
+    margin-top: 5vh;
+}
 /* ---------- Interacciones ---------- */
 
 li::marker {
